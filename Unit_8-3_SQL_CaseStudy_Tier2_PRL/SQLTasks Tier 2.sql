@@ -84,7 +84,7 @@ SELECT DISTINCT name AS CourtName,
 FROM Members
 LEFT JOIN Bookings USING (memid)
 LEFT JOIN Facilities USING (facid)
-WHERE name LIKE tennis
+WHERE name LIKE "tennis%"
 ORDER BY MemName;
 
 /* Q8: Produce a list of bookings on the day of 2012-09-14 which
